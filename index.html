@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url Shortening Api Mobile view</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<body>
+    <header class="head">
+        <div class="row">
+                <div class="logo-name">shortly</div>
+                <nav class="col-8">
+                     <div class="tags">
+                        <ul>
+                            <li><a href="#">features</a></li>
+                            <li><a href="#">pricing</a></li>
+                            <li><a href="#">resources</a></li>
+                        </ul> 
+                        <p></p>
+                        <ul class="sign-in">
+                            <li><a href="">login</a></li>
+                            <li><button class="btn">  sign up</button></li>
+                        </ul>
+                    </div>   
+                </nav>
+                <div class="menu-bar"><i class="fas fa-bars" onclick="openMenu()"></i></div>
+        </div>
+    </header>
+    <article class="top-section">
+        <div class="introduction-text">
+            <h1 class="head-main-text">More than just shorter links</h1>
+            <h4 class="head-follow-text">
+                Build your brands recognition and get detailed insights on
+                how your links are performing.
+            </h4>
+            <button class="btn-start">get started</button>
+        </div>
+        <div class="top-image">
+            <img src="/images/illustration-working.svg" alt="desktop typing man">
+        </div>
+    </article>
+
+    <section class="dim-Bg">
+        
+        <article class="url-section">
+            <input type="text" id="value" placeholder="  Shorten a link here...">
+            <p class="error-text">Please add a link</p>
+            <button class="submit" id="submitButton">shorten it!</button>
+        </article>
+
+        <main class="display-url">
+            <div class="url">
+                <p class="address">http://www.frontendmentor.io</p>
+                <p class="break"></p>
+                <p class="short-url">http://reLink/k4lKyk</p>
+                <button class="copy-btn">Copy</button>
+            </div>
+
+            <div class="url">
+                <p class="address">http://www.frontendmentor.io</p>
+                <p class="break"></p>
+                <p class="short-url">http://reLink/k4lKyk</p>
+                <button class="copy-btn">Copy</button>
+            </div>
+
+            <div class="url">
+                <p class="address" id="address">http://www.frontendmentor.io</p>
+                <p class="break"></p>
+                <p class="short-url" id="short">http://reLink/k4lKyk</p>
+                <button class="copy-btn"onclick="myFunction(Clicked!)">Copy</button>
+            </div>
+        </main>
+
+        <article class="info-section">
+            <div class="head-info">
+                <h2 class="info-head-text">advanced statistics</h2>
+                <h4 class="info-follow-text">
+                    Track how your links are performing across the web with our advanced statistics dashboard.
+                </h4>
+            </div>
+        </article>
+
+        <article>
+            <p class="horizontal-line"></p>
+            <aside class="aside-section">
+                <div class="little-info">
+                    <p class="small-png"><img class="small-pn" src="./images/icon-brand-recognition.svg" alt=""></p>
+                    <h2 class="little-head">brand recognition</h2>
+                    <h4 class="little-follow">
+                        Boost your brand recognition with each click. 
+                        Generic links don't mean a thing. 
+                        Branded links help instil confidence in your content.
+                    </h4>
+                </div>
+                <div class="little-info" id="middle">
+                    <p class="small-png"><img class="small-pn" src="./images/icon-detailed-records.svg" alt="details"></p>
+                    <h2 class="little-head">detailed records</h2>
+                    <h4 class="little-follow">
+                    Gain insights into who is clicking your links. 
+                    Knowing when and where people engage with your content helps inform better decisions.
+                    </h4>
+                </div>
+                <div class="little-info" id="end">
+                    <p class="small-png"><img  class="small-pn"src="./images/icon-fully-customizable.svg" alt=""></p>
+                    <h2 class="little-head">fully customizable</h2>
+                    <h4 class="little-follow">
+                        Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.
+                    </h4>
+                </div>
+            </aside>
+        </article>
+    </section>
+    <aside class="end-section">
+        <h2 class="end-lead">Boosts your links today</h2>
+        <button class="end-btn">get started</button>
+    </aside>
+
+    <footer class="footer">
+        <article class="container">
+            <div class="foot">
+                <div class="logo-name">shortly</div>
+                <div class="mid-section">
+    
+                    <ul>
+                            <p class="end-head fs-5 fw-bold">features</p>
+                            <li>link shortening</li>
+                            <li>branded links</li>
+                            <li>analytics</li>
+                        </ul>
+                       
+                        <ul>
+                            <p class="end-head fs-5 fw-bold">resources</p>
+                            <li>blog</li>
+                            <li>developers</li>
+                            <li>support</li>
+                        </ul>  
+                 
+                        <ul> 
+                            <p class="end-head fs-5 fw-bold">company</li>
+                             <li>about</li>
+                             <li>our team</li>
+                             <li>careers</li>
+                             <li>contact</li> 
+                        </ul>
+                </div>
+                <div class="social">
+                    <i class="fab fa-facebook-square socials" ></i>
+                    <i class="fab fa-twitter socials" ></i>
+                    <i class="fab fa-pinterest socials"></i>
+                    <i class="fab fa-instagram socials"></i>
+                </div>
+            </div>
+        </article>
+    </footer>
+       
+        
+</body>
+<script src="main.js"></script>
+</html>
+
