@@ -117,13 +117,13 @@
     top: -4.5rem;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 90% 10%;
-        grid-template-columns: 90% 10%;
+    -ms-grid-columns: 90% 10% 10%;
+        grid-template-columns: 90% 10% 10%;
     -webkit-column-gap: 0%;
             column-gap: 0%;
   }
-  body .dim-Bg .url-section input {
-    width: 80%;
+  body .dim-Bg .url-section #value {
+    width: 87%;
     margin: 2.5rem 0rem;
     height: 4rem;
     border-radius: .5rem;
@@ -132,12 +132,15 @@
     font-weight: 500;
     outline: none;
     position: relative;
-    left: 7%;
+    left: 3rem;
   }
   body .dim-Bg .url-section p {
-    display: none;
+    visibility: hidden;
     color: red;
     font-style: italic;
+    position: relative;
+    top: 6rem;
+    right: 72rem;
   }
   body .dim-Bg .url-section .submit {
     color: #fff;
@@ -147,11 +150,13 @@
     height: 2.4rem;
     cursor: pointer;
     height: 4.2rem;
-    margin: 2.5rem -2rem;
-    width: 70%;
+    margin: 2.5rem 4rem 2.5rem 0rem;
+    width: 110%;
     border-radius: .4rem;
     position: relative;
-    right: -10%;
+    left: -14rem;
+    text-transform: capitalize;
+    font-size: 1.3rem;
   }
   body .dim-Bg .display-url {
     width: 80%;

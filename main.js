@@ -17,8 +17,8 @@ function checkInputValue(){
 
 function errorDisplay(){
     value.style.border = 'red solid 0.1rem';
-    console.log('error');
-    document.querySelector('.error-text').style.display= "block";
+    
+    document.querySelector('.error-text').style.visibility= "visible";
 }
 function CheckDisplay(value){
     fetch(`https://api.shrtco.de/v2/shorten?url=${value}`, {method:'GET'})
