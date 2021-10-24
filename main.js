@@ -55,10 +55,10 @@ function correctFunction(){
   value.style.border = "0.1rem solid hsl(180, 66%, 49%)" 
   
 }
-function myFunction(value){
-    var copyText = document.getElementById("short");
-    let copyBtn  = document.querySelector('.copy-btn')
-    copyBtn.value = `${value}`
+function myFunction() {
+    /* Get the text field */
+    var copyText = document.querySelector("#short");
+  let init = document.querySelector('#init')
     /* Select the text field */
     copyText.select();
     copyText.setSelectionRange(0, 99999); /* For mobile devices */
@@ -68,4 +68,7 @@ function myFunction(value){
   
     /* Alert the copied text */
     alert("Copied the text: " + copyText.value);
-}
+    init.innerHTML = 'Copied!'
+
+
+  }
